@@ -5,17 +5,20 @@ void compute(int arrow[BUFFER_SIZE], int& n)
 {
     for (int i = 0; i < BUFFER_SIZE; i++)
         n += arrow[i];
+    cout << "managed to compute\n";
 }
 void write(int arrow[BUFFER_SIZE])
 {
+    cout << "Enter buffer (8 symbols): ";
     for (int i = 0; i < BUFFER_SIZE; i++)
         cin >> arrow[i];
+    cout << "success\n";
 }
 void read(int arrow[BUFFER_SIZE])
 {
     for (int i = 0; i < BUFFER_SIZE; i++)
         cout << arrow[i] << " ";
-    cout << "\n";
+    cout << "success\n";
 }
 void save(int arrow[BUFFER_SIZE])
 {
@@ -25,6 +28,7 @@ void save(int arrow[BUFFER_SIZE])
         save_data << arrow[i] << " ";
     }
     save_data.close();
+    cout << "saved\n";
 }
 void load(int arrow[BUFFER_SIZE])
 {
@@ -32,6 +36,7 @@ void load(int arrow[BUFFER_SIZE])
     for (int i = 0; i < BUFFER_SIZE; i++)
         load_data >> arrow[i];
     load_data.close();
+    cout << "loaded\n";
 }
 void sum(int arrow[BUFFER_SIZE])
 {
@@ -47,6 +52,7 @@ int main()
     bool end = false;
     while(!end)
     {
+        cout << "enter command: ";
         cin >> input;
         if (input == "end")
             end = true;
