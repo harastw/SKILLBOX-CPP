@@ -10,7 +10,7 @@ int main()
   dict["studio"] = "Metro-Goldwyn-Mayer";
   dict["Country of Origin"] = "USA", dict["Production year"] = 1968;
   dict["written by"] = "Stanley Kubrick", dict["producer"] = "Stanley Kubrick";
-  dict["producer"] = "Stanley Kubrick", dict["Dr. Dave Bowman"] = "Keir Dullea";
-  dict["HAL 9000 (voice actor)"] = "Douglas Rain";
+  dict["Dr. Dave Bowman"] = "Keir Dullea", dict["HAL 9000 (voice actor)"] = "Douglas Rain";
   file << dict;
 }
+
