@@ -6,7 +6,7 @@ ColorSlider::ColorSlider(QWidget *parent)
 
   QVBoxLayout* vbox = new QVBoxLayout(this); // QHBoxLayout - line style
          
-  slider = new QSlider(Qt::Horizontal , this); // QSlider - .. slider?
+  slider = new QSlider(Qt::Horizontal , this);
   slider->setRange(0,100); // set range for slider
   vbox->addWidget(slider);
  
