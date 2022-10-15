@@ -10,8 +10,3 @@ int main(int argc, char *argv[]) {
   
   return QApplication::exec();
 }
-/*
-  1 - button size
-  2 - button color
-  3 - button sound
-*/
